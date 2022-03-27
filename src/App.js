@@ -58,7 +58,7 @@ function App() {
             <ThemeContext.Provider value={themeContextValue}>
                 <CountersContext.Provider value={countersContextValue}>
                     <Container>
-                        <ToggleThemeButton saveTheme={saveTheme} />
+                        {false ? <ToggleThemeButton saveTheme={saveTheme} /> : null}
                         <Counters
                             columnsPerRow={columnsPerRow}
                             setColumnsPerRow={setColumnsPerRow}
