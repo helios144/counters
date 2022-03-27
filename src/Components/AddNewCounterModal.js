@@ -29,8 +29,8 @@ export default function AddNewCounterModal({ open, setOpen }) {
     const avaliblePositionsDropdownOptions = () => {
         let currentPositions = counters.map((counter, i) => ({
             key: i,
-            value: counter.position.toString(),
-            text: counter.position.toString(),
+            value: counter.position,
+            text: counter.position,
         }))
 
         currentPositions.push({
